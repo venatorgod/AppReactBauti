@@ -1,0 +1,76 @@
+#!/bin/bash
+#Descargar proyecto base y libs
+npx create-vite@latest
+y
+React framework
+JavaScript
+ESLint
+Yes
+npm intall motion
+
+#Correr server local
+npm run dev
+
+
+
+
+#React
+#Proyecto
+- Para iniciar un proyecto todo lo que se requiere es:
+  - un hmtl base con un elemento al cual vamos a tener que poder identificar de alguna manera
+    - Puede ser por ejemplo seteandole un id="root"
+  - un documento javascript que tenga estas lineas
+import ReactDOM from "react-dom/client";
+const entryPoint = document.getElementById("root");
+ReactDOM.createRoot(entryPoint).render(<App />);
+
+
+#JSX
+- Cuando se quiere meter algun valor dinamico en algun componente se utilizan llaves y alguna funcion que retorne un valor
+  - ej: <h1>Hello {variable_value}</h1> <img src={path} />
+- Una buena practica es mantener el codigo de javascript limpio asi que si llamas a funciones dentro de las llaves deberias usar una constante en el componente
+  - ej:
+    /*
+    const names = ["Yo", "Vos", "El"]
+    function F(max) {
+      const name = names[Math.floor(Math.random() * (max + 1))];
+      return (
+        <div> Hello {name} </div>
+      );
+    */
+- Para usar imagenes se utiliza un import statement a una variable debido a que despues se puede optimizar:
+  - ej: 
+    /*
+    import reactImg from "./src/assets/react-core-concepts.png"
+    [...]
+    <img src={reactImg} />
+    */
+
+
+#Componentes 
+- Nombres deben empezar con mayuscula
+- Las funciones deben retornar un objeto renderizable
+- Cada componente es un funcion de javascript
+  - ej:
+    /*
+    function App() {
+      return (
+        <div>
+          <header>
+            <img src="src/assets/react-core-concepts.png" alt="Stylized atom" />
+            <h1>React Essentials</h1>
+            <p>
+              Fundamental React concepts you will need for almost any app you are
+              going to build!
+            </p>
+          </header>
+          <main>
+            <h2>Time to get started!</h2>
+          </main>
+        </div>
+      );
+    }
+
+    export default App;
+
+    */
