@@ -6,7 +6,7 @@ React framework
 JavaScript
 ESLint
 Yes
-npm intall motion
+npm install motion
 
 #Correr server local
 npm run dev
