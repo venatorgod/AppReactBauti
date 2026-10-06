@@ -6,7 +6,7 @@ import InitialLetter from './components/InitialLetter/InitialLetter';
 import ProgressBar from './components/ProgressBar/ProgressBar';
 import CartaAbajo from "./components/CartaAbajo/CartaAbajo";
 function App() {
-  const [counter, setCounter] = useState(4);
+  const [counter, setCounter] = useState(0);
   const TEXTOS = [
     "Lu, Toca la carta",
     "Otra vez",
